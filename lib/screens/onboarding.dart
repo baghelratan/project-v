@@ -120,21 +120,36 @@ class Onboarding extends StatelessWidget {
                   SizedBox(
                       height: 30,
                       width: 30,
-                      child: Image.asset('assets/image/facebook_logo.png')),
+                      child: GestureDetector(
+                        child: Image.asset('assets/image/facebook_logo.png'),
+                        onTap: () {
+                          print("clicked facebook");
+                        },
+                      )),
                   const SizedBox(
                     width: 40,
                   ),
                   SizedBox(
                       height: 30,
                       width: 30,
-                      child: Image.asset('assets/image/google_logo.png')),
+                      child: GestureDetector(
+                        child: Image.asset('assets/image/google_logo.png'),
+                        onTap: () {
+                          print("clicked google");
+                        },
+                      )),
                   const SizedBox(
                     width: 40,
                   ),
                   SizedBox(
                       height: 30,
                       width: 30,
-                      child: Image.asset('assets/image/apple_logo.png')),
+                      child: GestureDetector(
+                        child: Image.asset('assets/image/apple_logo.png'),
+                        onTap: () {
+                          print("clicked apple");
+                        },
+                      )),
                 ],
               ),
               const SizedBox(
@@ -157,10 +172,19 @@ class Onboarding extends StatelessWidget {
                       )),
                 ),
               ),
-              const SizedBox(height: 10,),
-              Center(child: TextButton(onPressed: (){
-                 print("log in button clicked");
-              }, child: const Text("Existing account ? Login in", style: TextStyle(fontFamily: "sanchez_italic", color: Colors.white),)))
+              const SizedBox(
+                height: 10,
+              ),
+              Center(
+                  child: TextButton(
+                      onPressed: () {
+                        print("log in button clicked");
+                      },
+                      child: const Text(
+                        "Existing account ? Login in",
+                        style: TextStyle(
+                            fontFamily: "sanchez_italic", color: Colors.white),
+                      )))
             ],
           )),
     );
