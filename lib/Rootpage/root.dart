@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meeting_app/Rootpage/Routers.dart';
-import 'package:meeting_app/screens/Splash_screen.dart';
+import 'package:meeting_app/Rootpage/routers_page.dart';
+import 'package:meeting_app/screens/splash_screen.dart';
 
 class Root extends StatelessWidget {
   const Root({super.key});
