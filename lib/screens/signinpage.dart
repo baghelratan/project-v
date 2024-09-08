@@ -77,7 +77,26 @@ class _SigninpageState extends State<Signinpage> {
                     ),
                     child: Center(
                       child: IconButton(
-                        icon: Image.asset("assets/image/apple_logo.png",
+                        icon: Image.asset("assets/image/facebook_logo.png",
+                            width: 20, height: 24),
+                        onPressed: () {},
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 20),
+                  Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                        width: 1.5,
+                      ),
+                    ),
+                    child: Center(
+                      child: IconButton(
+                        icon: Image.asset("assets/image/google_logo.png",
                             width: 20, height: 24),
                         onPressed: () {},
                       ),
@@ -97,26 +116,7 @@ class _SigninpageState extends State<Signinpage> {
                     child: Center(
                       child: IconButton(
                         icon: Image.asset("assets/image/apple_logo.png",
-                            width: 20, height: 24),
-                        onPressed: () {},
-                      ),
-                    ),
-                  ),
-                  SizedBox(width: 20),
-                  Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: Colors.grey[300]!,
-                        width: 1.5,
-                      ),
-                    ),
-                    child: Center(
-                      child: IconButton(
-                        icon: Image.asset("assets/image/apple_logo.png",
-                            width: 20, height: 24),
+                            color: Colors.black, width: 20, height: 24),
                         onPressed: () {},
                       ),
                     ),

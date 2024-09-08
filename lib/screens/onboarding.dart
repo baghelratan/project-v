@@ -17,189 +17,191 @@ class Onboarding extends StatelessWidget {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(
-              height: 50,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  height: 30,
-                  width: 30,
-                  child: Image.asset(
-                    'assets/image/splashlogo.png',
-                    color: Colors.white,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Text(
-                  "Chatbox",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'sanchez',
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 15),
-              child: RichText(
-                text: const TextSpan(
-                  children: [
-                    TextSpan(
-                      text: 'Connect\n',
-                      style: TextStyle(
-                        letterSpacing: 4,
-                        fontFamily: 'sansation',
-                        color: Colors.white,
-                        fontSize: 70,
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'friends\n',
-                      style: TextStyle(
-                        letterSpacing: 4,
-                        fontFamily: 'sansation',
-                        color: Colors.white,
-                        fontSize: 70,
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'easily &\n',
-                      style: TextStyle(
-                        letterSpacing: 4,
-                        fontFamily: 'sansation',
-                        color: Colors.white,
-                        fontSize: 70,
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'quickly',
-                      style: TextStyle(
-                        letterSpacing: 4,
-                        fontFamily: 'sansation',
-                        color: Colors.white,
-                        fontSize: 70,
-                      ),
-                    ),
-                  ],
-                ),
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(
+                height: 50,
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            const Padding(
-              padding: EdgeInsets.only(left: 15),
-              child: Text(
-                "Our Video Calling app is the perfect\nway to say connected with friends\nand family",
-                style: TextStyle(
-                  fontFamily: "sanchez_italic",
-                  color: Colors.white70,
-                  fontSize: 17,
-                  wordSpacing: 4,
-                  letterSpacing: 1,
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 120,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  height: 30,
-                  width: 30,
-                  child: GestureDetector(
-                    child: Image.asset('assets/image/facebook_logo.png'),
-                    onTap: () {
-                      print("clicked facebook");
-                    },
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 30,
+                    width: 30,
+                    child: Image.asset(
+                      'assets/image/splashlogo.png',
+                      color: Colors.white,
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  width: 40,
-                ),
-                SizedBox(
-                  height: 30,
-                  width: 30,
-                  child: GestureDetector(
-                    child: Image.asset('assets/image/google_logo.png'),
-                    onTap: () {
-                      print("clicked google");
-                    },
+                  const SizedBox(
+                    width: 10,
                   ),
-                ),
-                const SizedBox(
-                  width: 40,
-                ),
-                SizedBox(
-                  height: 30,
-                  width: 30,
-                  child: GestureDetector(
-                    child: Image.asset('assets/image/apple_logo.png'),
-                    onTap: () {
-                      print("clicked apple");
-                    },
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 100,
-            ),
-            Center(
-              child: Container(
-                height: 45,
-                width: 300,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, RoutersPages.signpage);
-                  },
-                  child: const Text(
-                    "Sign up with mail",
+                  const Text(
+                    "Chatbox",
                     style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'sanchez',
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                ),
+                ],
               ),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Center(
-              child: TextButton(
-                onPressed: () {
-                  print("log in button clicked");
-                },
-                child: const Text(
-                  "Existing account? Log in",
-                  style: TextStyle(
-                    fontFamily: "sanchez_italic",
-                    color: Colors.white,
+              const SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 15),
+                child: RichText(
+                  text: const TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Connect\n',
+                        style: TextStyle(
+                          letterSpacing: 4,
+                          fontFamily: 'sansation',
+                          color: Colors.white,
+                          fontSize: 70,
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'friends\n',
+                        style: TextStyle(
+                          letterSpacing: 4,
+                          fontFamily: 'sansation',
+                          color: Colors.white,
+                          fontSize: 70,
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'easily &\n',
+                        style: TextStyle(
+                          letterSpacing: 4,
+                          fontFamily: 'sansation',
+                          color: Colors.white,
+                          fontSize: 70,
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'quickly',
+                        style: TextStyle(
+                          letterSpacing: 4,
+                          fontFamily: 'sansation',
+                          color: Colors.white,
+                          fontSize: 70,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
-            ),
-          ],
+              const SizedBox(
+                height: 10,
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 15),
+                child: Text(
+                  "Our Video Calling app is the perfect\nway to say connected with friends\nand family",
+                  style: TextStyle(
+                    fontFamily: "sanchez_italic",
+                    color: Colors.white70,
+                    fontSize: 17,
+                    wordSpacing: 4,
+                    letterSpacing: 1,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 120,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 30,
+                    width: 30,
+                    child: GestureDetector(
+                      child: Image.asset('assets/image/facebook_logo.png'),
+                      onTap: () {
+                        print("clicked facebook");
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 40,
+                  ),
+                  SizedBox(
+                    height: 30,
+                    width: 30,
+                    child: GestureDetector(
+                      child: Image.asset('assets/image/google_logo.png'),
+                      onTap: () {
+                        print("clicked google");
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 40,
+                  ),
+                  SizedBox(
+                    height: 30,
+                    width: 30,
+                    child: GestureDetector(
+                      child: Image.asset('assets/image/apple_logo.png'),
+                      onTap: () {
+                        print("clicked apple");
+                      },
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 100,
+              ),
+              Center(
+                child: Container(
+                  height: 45,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, RoutersPages.signpage);
+                    },
+                    child: const Text(
+                      "Sign up with mail",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Center(
+                child: TextButton(
+                  onPressed: () {
+                    print("log in button clicked");
+                  },
+                  child: const Text(
+                    "Existing account? Log in",
+                    style: TextStyle(
+                      fontFamily: "sanchez_italic",
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
