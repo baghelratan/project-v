@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
+import 'package:meeting_app/Rootpage/routers_page.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -170,9 +171,8 @@ class Onboarding extends StatelessWidget {
                 ),
                 child: TextButton(
                   onPressed: () {
-                    print("sign up button clicked");
+                    Navigator.pushNamed(context, RoutersPages.signpage);
                   },
-
                   child: const Text(
                     "Sign up with mail",
                     style: TextStyle(
