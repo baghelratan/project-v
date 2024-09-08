@@ -27,7 +27,9 @@ class _SigninpageState extends State<Signinpage> {
             icon: Icon(Icons.arrow_back),
             iconSize: 24,
             color: Colors.black,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
           ),
         ),
       ),
